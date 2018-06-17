@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="my_primary">#121212</color>
+    <color name="my_primary_dark">#121212</color>
+    <color name="my_primary_light">#FEFEFE</color>
+    <color name="my_accent">#FF5722</color>
+    <color name="my_primary_text">#212121</color>
+    <color name="my_secondary_text">#727272</color>
+    <color name="my_icons">#FFFFFF</color>
+    <color name="my_divider">#B6B6B6</color>
+
+    <color name="my_primary_transparent">#BBBBBB</color>
+    <color name="my_primary_dark_transparent">#888888</color>
+    <color name="my_primary_light_transparent">#EEEEEE</color>
+
+    <color name="my_dark_transparent_bg">#2D000000</color>
+</resources>

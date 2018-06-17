@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/map_sidebar_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/map_sidebar_menu_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/map_settings_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/fab_margin_default"
+            android:layout_marginLeft="@dimen/fab_margin_default"
+            android:layout_marginRight="@dimen/fab_margin_default"
+            android:layout_marginTop="@dimen/fab_margin_default"
+            android:src="@drawable/ic_settings_white_24dp"
+            app:fabSize="mini"
+            />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/map_zoom_out_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/fab_margin_default"
+            android:layout_marginLeft="@dimen/fab_margin_default"
+            android:layout_marginRight="@dimen/fab_margin_default"
+            android:layout_marginTop="@dimen/fab_margin_default"
+            android:src="@drawable/ic_remove_white_24dp"
+            app:fabSize="mini"
+            />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/map_zoom_in_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/fab_margin_default"
+            android:layout_marginLeft="@dimen/fab_margin_default"
+            android:layout_marginRight="@dimen/fab_margin_default"
+            android:layout_marginTop="@dimen/fab_margin_default"
+            android:src="@drawable/ic_add_white_24dp"
+            app:fabSize="mini"
+            />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/map_show_my_position_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/fab_margin_default"
+            android:layout_marginLeft="@dimen/fab_margin_default"
+            android:layout_marginRight="@dimen/fab_margin_default"
+            android:layout_marginTop="@dimen/fab_margin_default"
+            android:src="@drawable/ic_location_searching_white_24dp"
+            app:fabSize="mini"
+            />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/map_nav_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/fab_margin_default"
+            android:layout_marginLeft="@dimen/fab_margin_default"
+            android:layout_marginRight="@dimen/fab_margin_default"
+            android:layout_marginTop="@dimen/fab_margin_default"
+            android:src="@drawable/ic_navigation_white_24dp"
+            app:fabSize="mini"
+            />
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/map_sidebar_control_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/fab_margin_default"
+        android:layout_marginLeft="@dimen/fab_margin_default"
+        android:layout_marginRight="@dimen/fab_margin_default"
+        android:layout_marginTop="@dimen/fab_margin_default"
+        android:src="@drawable/ic_keyboard_arrow_up_white_24dp"
+        />
+</LinearLayout>

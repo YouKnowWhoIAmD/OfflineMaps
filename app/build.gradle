@@ -1,0 +1,55 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion "27.0.3"
+
+    defaultConfig {
+        applicationId "com.junjunguo.pocketmaps"
+        minSdkVersion 19
+        targetSdkVersion 27
+        versionCode 9
+        versionName "1.9"
+    }
+
+    buildTypes {
+        all {
+            minifyEnabled true
+            useProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        disable 'InvalidPackage','MissingPrefix'
+    }
+}
+
+
+dependencies {
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    implementation 'com.jjoe64:graphview:4.2.2'
+
+    implementation(group: 'com.graphhopper', name: 'graphhopper-core', version: '0.10-SNAPSHOT') {
+       exclude group: 'com.google.protobuf', module: 'protobuf-java'
+       exclude group: 'org.openstreetmap.osmosis', module: 'osmosis-osm-binary'
+       exclude group: 'org.apache.xmlgraphics', module: 'xmlgraphics-commons'
+    }
+
+    implementation 'org.mapsforge:vtm:0.9.0'
+    implementation 'org.mapsforge:vtm-android:0.9.0'
+    implementation 'org.mapsforge:vtm-android:0.9.0:natives-armeabi'
+    implementation 'org.mapsforge:vtm-android:0.9.0:natives-armeabi-v7a'
+    implementation 'org.mapsforge:vtm-android:0.9.0:natives-arm64-v8a'
+    implementation 'org.mapsforge:vtm-android:0.9.0:natives-x86'
+    implementation 'org.mapsforge:vtm-android:0.9.0:natives-x86_64'
+    implementation 'org.mapsforge:vtm-jts:0.9.0'
+    implementation 'org.mapsforge:vtm-themes:0.9.0'
+    implementation 'com.caverock:androidsvg:1.2.2-beta-1'
+
+    implementation 'org.slf4j:slf4j-api:1.7.25'
+    implementation 'org.slf4j:slf4j-android:1.7.25'
+    implementation 'com.squareup.okhttp3:okhttp:3.9.1'
+}

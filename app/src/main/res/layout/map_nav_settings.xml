@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/nav_settings_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="@color/my_primary"
+    android:fontFamily="sans-serif"
+    android:visibility="invisible"
+    >
+    <!-- header-->
+    <RelativeLayout
+        android:id="@+id/map_nav_settings_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|top"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp"
+        >
+
+        <ImageButton
+            android:id="@+id/nav_settings_foot_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="10dp"
+
+            android:src="@drawable/ic_directions_walk_white_24dp"
+            />
+
+        <ImageButton
+            android:id="@+id/nav_settings_bike_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/nav_settings_foot_btn"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="10dp"
+            android:src="@drawable/ic_directions_bike_white_24dp"
+            />
+
+        <ImageButton
+            android:id="@+id/nav_settings_car_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/nav_settings_bike_btn"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="10dp"
+            android:src="@drawable/ic_directions_car_white_24dp"
+            />
+
+
+        <ImageButton
+            android:id="@+id/nav_settings_clear_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="10dp"
+            android:src="@drawable/ic_keyboard_arrow_down_white_24dp"
+            />
+
+        <ImageButton
+            android:id="@+id/nav_settings_search_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/nav_settings_clear_btn"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="10dp"
+            android:src="@drawable/ic_search_white_24dp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/nav_settings_foot_btn"
+            android:layout_marginTop="8dp"
+            android:background="@color/my_divider"/>
+    </RelativeLayout>
+
+    <!-- from field-->
+    <RelativeLayout
+        android:id="@+id/map_nav_settings_from_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/map_nav_settings_header"
+        android:clickable="true"
+        android:descendantFocusability="beforeDescendants"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="left|center_vertical"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp"
+        >
+
+        <ImageView
+            android:id="@+id/nav_settings_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:padding="8dp"
+            android:src="@drawable/ic_location_start_white_24dp"
+            />
+
+        <TextView
+            android:id="@+id/nav_settings_from_local_tv"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/nav_settings_start"
+            android:text="@string/from_loc"
+            android:textColor="@color/my_divider"
+            android:textSize="12sp"/>
+
+        <EditText
+            android:id="@+id/nav_settings_from_local_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="94dp"
+            android:layout_marginRight="44dp"
+            android:hint="latitude, longitude"
+            android:singleLine="true"
+            android:textColorHint="@color/my_secondary_text"
+            android:textSize="14sp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:src="@drawable/ic_arrow_drop_down_white_18dp"/>
+    </RelativeLayout>
+    <!--to field-->
+    <RelativeLayout
+        android:id="@+id/map_nav_settings_to_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/map_nav_settings_from_item"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:descendantFocusability="beforeDescendants"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp">
+
+        <ImageView
+            android:id="@+id/nav_settings_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:padding="8dp"
+            android:src="@drawable/ic_location_end_white_24dp"
+            />
+
+        <TextView
+            android:id="@+id/nav_settings_to_local_tv"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/nav_settings_end"
+            android:text="@string/to_loc"
+            android:textColor="@color/my_divider"
+            android:textSize="12sp"/>
+
+        <EditText
+            android:id="@+id/nav_settings_to_local_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="94dp"
+            android:layout_marginRight="44dp"
+            android:hint="latitude, longitude"
+            android:singleLine="true"
+            android:textColorHint="@color/my_secondary_text"
+            android:textSize="14sp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:src="@drawable/ic_arrow_drop_down_white_18dp"/>
+    </RelativeLayout>
+</RelativeLayout>
